@@ -1,0 +1,19 @@
+<div class="dashbod"
+  <div class="page-header">
+      <h1 align= "center">Track Your Spending!</h1>
+  </div>
+
+  <br>
+  <br>
+  <p>
+    Your total right now: <%= @totalcash %>
+  </p>
+  <p>
+    Add another transaction:
+    <%= link_to 'Feed me, Seymour', new_money_path %>
+  </p>
+  <p>
+    You've made <%= @balance %> transactions.
+    <%= link_to 'Ch-ch-check \'em out', new_money_path %>
+  </p>
+</div>
